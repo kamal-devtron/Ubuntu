@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install -y \
     automake \
     autotools-dev \
     fuse \
+    g++ \
     git \
     libcurl4-gnutls-dev \
     libfuse-dev \
@@ -12,3 +13,8 @@ RUN apt-get update && apt-get install -y \
     make \
     pkg-config \
     vim
+RUN cd s3fs-fuse \
+    ./autogen.sh \
+    ./configure --prefix=/usr --with-openssl \
+    make \
+    make install \    
