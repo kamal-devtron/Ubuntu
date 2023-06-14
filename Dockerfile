@@ -14,8 +14,4 @@ RUN apt-get update && apt-get install -y \
     pkg-config \
     vim
 RUN git clone https://github.com/s3fs-fuse/s3fs-fuse.git    
-RUN cd s3fs-fuse \
-    ./autogen.sh \
-    ./configure --prefix=/usr --with-openssl \
-    make \
-    make install
+RUN cd s3fs-fuse&&./autogen.sh&&./configure --prefix=/usr --with-openssl&&make&&make install
