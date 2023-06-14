@@ -18,4 +18,4 @@ RUN cd s3fs-fuse \
     ./autogen.sh \
     ./configure --prefix=/usr --with-openssl \
     make \
-    make install \    
+    make install
