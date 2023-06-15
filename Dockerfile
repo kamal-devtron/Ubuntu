@@ -3,6 +3,7 @@ RUN apt-get update && apt-get install -y \
     git \
     automake \
     sudo \
+    jq \
     autotools-dev \
     fuse \
     g++ \
