@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y \
     fuse \
     g++ \
     curl \
+    unzip \
     git \
     libcurl4-gnutls-dev \
     libfuse-dev \
