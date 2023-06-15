@@ -2,6 +2,7 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get install -y \
     git \
     automake \
+    aws-cli \
     autotools-dev \
     fuse \
     g++ \
