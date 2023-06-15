@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     autotools-dev \
     fuse \
     g++ \
+    curl \
     git \
     libcurl4-gnutls-dev \
     libfuse-dev \
