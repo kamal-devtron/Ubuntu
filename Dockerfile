@@ -22,6 +22,7 @@ RUN cd s3fs-fuse&&./autogen.sh&&./configure --prefix=/usr --with-openssl&&make&&
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"&&unzip awscliv2.zip&&sudo ./aws/install
 RUN curl -LO https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb&&dpkg -i packages-microsoft-prod.deb
 RUN apt install libfuse3-dev fuse3 -y
+RUN apt-get update
 RUN apt install blobfuse2 -y
 
 
