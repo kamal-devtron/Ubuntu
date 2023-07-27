@@ -24,7 +24,7 @@ RUN curl -LO https://packages.microsoft.com/config/ubuntu/22.04/packages-microso
 RUN apt install libfuse3-dev fuse3 -y
 RUN apt-get update
 RUN apt install blobfuse2 -y
-RUN sudo apt-get install apt-transport-https ca-certificates gnupg
+RUN sudo apt-get install apt-transport-https ca-certificates gnupg -y
 RUN echo "deb https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo tee /usr/share/keyrings/cloud.google.gpg
 RUN sudo apt-get update && sudo apt-get install google-cloud-cli
